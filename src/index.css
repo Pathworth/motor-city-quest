@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-night: #0a1020;
+  --color-navy: #111b36;
+  --color-navy-700: #182548;
+  --color-navy-600: #22325c;
+  --color-gold: #d4a63a;
+  --color-gold-300: #efcf7a;
+  --color-gold-200: #f7e3a8;
+  --color-patina: #3f8f74;
+  --color-patina-300: #7cc4aa;
+  --color-cream: #f4ede0;
+  --color-cream-300: #d9d0bd;
+  --color-ember: #e2583a;
+  --color-might: #e2583a;
+  --color-mind: #5b8def;
+  --color-heart: #e0558d;
+
+  --font-display: 'Cinzel', ui-serif, Georgia, serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+:root { color-scheme: dark; font-family: var(--font-sans); }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  color: var(--color-cream);
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #22325c 0%, transparent 60%),
+    radial-gradient(800px 500px at 90% 110%, #1a2f2a 0%, transparent 60%),
+    var(--color-night);
+  overflow: hidden;
+}
+button { font: inherit; }
+.font-display { font-family: var(--font-display); letter-spacing: 0.04em; }
+.glow { text-shadow: 0 0 24px rgba(212,166,58,0.45), 0 2px 0 rgba(0,0,0,0.6); }
+.card { background: rgba(17,27,54,0.82); border: 1px solid rgba(212,166,58,0.28); box-shadow: 0 20px 60px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.05); }
+.stars { position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image:
+    radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(1px 1px at 28% 62%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 44% 30%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(1px 1px at 61% 12%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 73% 48%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 86% 22%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(1px 1px at 93% 70%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 8% 80%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 52% 85%, rgba(255,255,255,0.4) 50%, transparent 51%);
+}
+.key { display:inline-block; min-width: 1.6em; padding: 0.1em 0.45em; border-radius: 0.4em; border: 1px solid rgba(244,237,224,0.35); background: rgba(255,255,255,0.06); font-weight: 700; font-size: 0.85em; text-align:center; }
