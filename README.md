@@ -6,6 +6,12 @@ A fantasy role-playing game set in real Detroit places. Pick a hero, walk into s
 
 Built for a live, projected demo. One laptop, one screen, keyboard-driven. No internet, no server, no account, no API spend.
 
+## Play it live
+
+**https://pathworth.github.io/motor-city-quest/**
+
+Pushing to `main` on GitHub `Pathworth/motor-city-quest` rebuilds and redeploys it (about two minutes). The repo is public because GitHub Pages on the free plan needs that.
+
 ## Run it at the demo
 
 1. Open `dist/index.html` by double-clicking it (or the copy at the project root, `Motor City Quest - DEMO.html`). It is one self-contained file.
@@ -66,4 +72,5 @@ Stack: React 19, Vite, Tailwind 4, Framer Motion, canvas-confetti, vite-plugin-s
 
 ## Change log
 
+- 2026-10-06 v1.0 live at pathworth.github.io/motor-city-quest, credited to Anthony.
 - 2026-10-06 v1.0: built from Jermaine's one-line idea for a live demo. Youth audience, no brand, projected laptop, choose-your-path rounds.
